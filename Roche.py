@@ -24,7 +24,6 @@ Sun_mass = 1.989*10**30 # kg
 
 M1=Sun_mass
 M2=Jupiter_mass
-M2=M1/30.
 a=DistanceJ
 Ang_vel=math.sqrt(G*(M1+M2)/(a**3)) #FROM KEPLER LAW
 P=2.*math.pi/Ang_vel #Period
@@ -77,7 +76,7 @@ pot2=np.vectorize(pot)
 
 
 
-#TRAJECTORY OF ASTEROID CLOSE STARTING CLOSE TO L4 in rest with respecting to the rotating frame
+#TRAJECTORY OF ASTEROID CLOSE STARTING CLOSE TO L4 in rest with respect to the rotating frame
 
 x0=a/2.-r1
 y0=math.sqrt(3)*a/2.
