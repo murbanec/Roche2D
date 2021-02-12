@@ -100,7 +100,8 @@ i=0
 
 timescale = math.sqrt((a*a)**1.5 / G/(M1+M2))
 dt=timescale/1000.
-
+#using 4th order Runge-Kutta to solve the a_x= d v_x/ dt
+# dt is constant set to timescale/1000  
 for i in range (1,steps):
     t[i]=(t[i-1]+dt)
     Kx1=dt*ax(x[i-1],y[i-1],vx[i-1],vy[i-1])
@@ -125,7 +126,7 @@ for i in range (1,steps):
 
 #LAGRANGE POINTS
 #L3, L1 and L2 points are lying on x-axis (left to right) for small values of alpha=M2/(M1+M2) the positions can are given analytically (to first order in alpha)
-#
+
     
 alpha=M2/(M1+M2)
 
