@@ -1,5 +1,8 @@
 # Roche2D
-Motion of test mass in Roche potential
+
+Simple python script for students of informatics
+
+##Motion of test mass in Roche potential
 
 Default is the system of Sun and Jupiter but one can change this.
 Units are in SI (kg, m, s)
